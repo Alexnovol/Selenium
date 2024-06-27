@@ -22,15 +22,15 @@ public class OpeningBrowser {
 
         switch (browser) {
             case "chrome" -> {
-                System.setProperty("webdriver.chrome.driver", "C:\\Webdriver\\Chrome\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\chromedriver.exe");
                 driver = new ChromeDriver();
             }
             case "firefox" -> {
-                System.setProperty("webdriver.firefox.driver", "C:\\Webdriver\\Firefox\\geckodriver.exe");
+                System.setProperty("webdriver.firefox.driver", "src\\main\\resources\\geckodriver.exe");
                 driver = new FirefoxDriver();
             }
             case "edge" -> {
-                System.setProperty("webdriver.edge.driver", "C:\\Webdriver\\Edge\\msedgedriver.exe");
+                System.setProperty("webdriver.edge.driver", "src\\main\\resources\\msedgedriver.exe");
                 driver = new EdgeDriver();
             }
         }
